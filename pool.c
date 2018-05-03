@@ -1,5 +1,3 @@
-
-
 #include "pool.h"
 #include "sequence.h"
 #include <stdlib.h>
