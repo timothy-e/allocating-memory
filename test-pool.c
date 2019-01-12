@@ -5,25 +5,6 @@
 #include <stdlib.h>
 #include "pool.h"
 
-/*
- This is simple I/O test client for pool.h that
- uses a very specific input format.
-
- Failure to follow format might lead to undefined behaviour.
- 
- LET is a lowercase letter from a..z to identify each allocation
-
- create INT: create the pool of size INT
- destroy: destroy the current pool
- alloc LET INT: allocate memory to LET of size INT
- free LET: free memory associated with LET
- realloc LET INT: reallocate memory associated with LET to size INT
- active: print active
- available: print available
- exit: quit
-*/
-
-
 // get_let() reads in a lowercase letter from input and returns
 //   it as an index from 0...25
 // requires: can read a character, must be between 'a'..'z'
